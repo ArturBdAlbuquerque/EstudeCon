@@ -1,0 +1,14 @@
+O que o site irá fazer:
+*Disponibilizar material para estudo de assuntos 
+que são cobrados em concursos da Marinha
+(Teorias e exercícios)
+
+*Trará atualizações sobre os concursos como:
+abertura de período de inscrição
+arquivos de concursos anteriores
+etc
+
+(Mais pra frente):
+*Permitirá ao usuário se cadastrar e definir
+quais concursos ele irá prestar para saber quanto
+tempo lhe resta para estudar 

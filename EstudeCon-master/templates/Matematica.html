@@ -1,0 +1,381 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<meta charset = "UTF-8"
+name = "viewport"
+content = "width = device-width,initial-scale = 1">
+<title>EstudeCon</title>
+<link rel = "stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+    a:link {
+     
+    background-color: transparent; 
+    text-decoration: none;
+    }
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #D3D3D3;
+        color: white;
+        padding: 1%;
+        
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+    }
+        
+    @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+    .mySlides {display:none;}
+</style>
+</head>
+<body style="background-image:url('clouds.jpg')">
+<nav>
+<div class="w3-row w3-large w3-light-grey">
+    <a href='/' class="w3-row-item w3-button w3-#ff0000" target="_blank">Home</a>
+    <a href='/matematica' class="w3-row-item w3-button w3-#ff0000" target="_self">Matemática</a>
+    <a href='/fisica' class="w3-row-item w3-button w3-#ff0000" target="_blank">Física</a>
+    <a href='/quimica' class="w3-row-item w3-button w3-#ff0000" target="_blank">Química</a>
+    <a href='/portugues' class="w3-row-item w3-button w3-#ff0000" target="_blank">Português</a>
+    
+    
+    
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"class="w3-row-item w3-button">Iniciar sessão/Cadastro</button>
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+<a href="#" class="w3-row-item w3-col" style="width:20%;height:10%;float:right;">
+<img src="C:\Users\Artur\Pictures\ezio.jpg" alt="ezio" style="width:10% height=10%;">
+</a>
+</nav>
+
+<h2 align="center"style="background-color:Turquoise;"> Matemática</h2>
+ <b><h4 align="center">Selecione o assunto que queira estudar.</b>
+ <hr>
+
+
+<div class="w3-row">
+
+<div class="w3-third w3-container">
+<div class="w3-card">
+<header class="w3-container w3-light-grey">
+<h3><a href="/multiplos_divisores" >Múltiplos e divisores</a></h3>
+</header>
+</div><br> 
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/regra_de_tres">Regra de três</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/algarismos_romanos">Algarismos romanos</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/razoes_proporcoes">Razões e proporções</a></h3>
+</header>
+</div><br>
+</div>
+	
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/fracoes">Frações</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/numeros_decimais">Números decimais</a></h3>
+</header>
+</div><br>
+</div>
+	
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/aritmetica">Aritmética</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/radiciacao_potenciacao">Radiciação e potenciação</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/algebra">Álgebra</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/funcoes">Funções</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/medidas_de_tempo">Medidas de tempo</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/sistema_metrico_decimal">Sistema métrico decimal</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/equacao_primeiro_grau">Equação 1° grau</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/equacao_segundo_grau">Equação 2° grau</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/angulos">Ângulos</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/porcentagem">Porcentagem</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/poligonos">Polígonos</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/geometrias">Geometrias</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/calculo_vetorial">Cálculo vetorial</a></h3>
+</div><br>
+</div>
+
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/sistemas_equacoes">Sistemas de equações</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/polinomios">Polinomios</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/raizes">Raízes</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/plano_cartesiano">Plano cartesiano</a></h3>
+</header>
+</div><br>
+</div>
+
+<div class="w3-third w3-container">
+<div class="w3-card-4">
+<header class="w3-container w3-light-grey">
+<h3><a href="/inequações">Inequações</a></h3>
+</header>
+</div><br>
+</div>
+
+</div>
+</body>
